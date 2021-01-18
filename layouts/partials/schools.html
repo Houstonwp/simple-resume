@@ -3,8 +3,8 @@
   {{ range . }}
   <div class="school">
     <div class="heading-line">
-      <h3>{{ .name }} - {{ .location }}</h3>
-      <h3>{{ .startdate }} - {{ if .enddate }}{{ .enddate }}{{ else }}Current{{ end }}</h3>
+      <h3>{{ .name }} {{ if .location }} - {{ .location }}{{ end }}</h3>
+      <h3>{{ .graddate }}</h3>
     </div>
     {{ range .degrees }}
     <p>

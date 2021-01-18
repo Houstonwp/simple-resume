@@ -12,11 +12,11 @@
         </p>
       </div>
       {{ end }}
-      {{ with .schools }}
-      {{ partial "schools.html" . }}
-      {{ end }}
       {{ with .experiences }}
       {{ partial "experiences.html" . }}
+      {{ end }}
+      {{ with .schools }}
+      {{ partial "schools.html" . }}
       {{ end }}
       {{ range .info }}
       <section>

@@ -10,13 +10,11 @@
     {{ with .phone }}
     <a href="tel:{{ . }}">({{substr . 0 3}}) {{substr . 3 3}}-{{substr . 6 4}}</a>
     {{ end }}
-    {{ with .website}}
-    <a href="https://{{ . }}">{{ . }}</a>
+    {{ with .location}}
+    <a>{{ . }}</a>
     {{ end }}
     {{ with .github }}
-    <a href="https://github.com/{{ . }}"
-      ><i class="fab fa-github"></i> {{ . }}</a
-    >
+    <a href="https://github.com/{{ . }}"><i class="fab fa-github"></i> {{ . }}</a>
     {{ end }}
   </div>
 </header>
